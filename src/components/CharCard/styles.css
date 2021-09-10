@@ -8,9 +8,11 @@
   padding: 10px;
   border: 1px solid #ddd;
   margin: 10px;
+  border-radius: 8px;
   background-color: aliceblue;
   color: cadetblue;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .picture {

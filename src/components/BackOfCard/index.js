@@ -1,13 +1,12 @@
-import "./styles.css";
-
-function CharCard({ char: { name, image, status }, callback }) {
+function BackOfCard({ char: { name, status, species, gender }, callback }) {
   return (
     <div className="card" onClick={callback}>
       <label>{name.length > 15 ? `${name.slice(0, 15)}...` : name}</label>
       <label>{status}</label>
-      <img className="picture" src={image} alt={name}></img>
+      <label>{species}</label>
+      <label>{gender}</label>
     </div>
   );
 }
 
-export default CharCard;
+export default BackOfCard;
